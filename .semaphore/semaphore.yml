@@ -11,6 +11,7 @@ blocks:
       jobs:
       - name: Setup
         commands:
+          - checkout
           - bundle install --deployment --path vendor/bundle
           - bundle exec rake db:setup
           - bundle exec rake db:test:prepare
