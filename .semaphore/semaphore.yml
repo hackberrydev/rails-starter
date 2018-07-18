@@ -9,13 +9,11 @@ blocks:
   - name: "Unit Tests"
     task:
       jobs:
-        - name: Setup
+        - name: RSpec
           commands:
             - sudo systemctl start postgresql
             - checkout
             - bundle install --deployment --path vendor/bundle
             - bundle exec rake db:setup
             - bundle exec rake db:test:prepare
-        - name: RSpec
-          commands:
             - bundle exec rake spec
