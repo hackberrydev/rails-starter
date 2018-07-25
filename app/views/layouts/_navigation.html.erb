@@ -8,15 +8,11 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <% if signed_in? %>
-          <li class="nav-item">
-            <%= link_to "Account", edit_user_registration_path, :class => "nav-link" %>
-          </li>
-          <% if current_user.admin? %>
-            <%= link_to "Admin", admin_users_path, :class => "nav-link" %>
+          <% if admin_page? %>
+            <%= render "layouts/admin_navigation" %>
+          <% else %>
+            <%= render "layouts/user_navigation" %>
           <% end %>
-          <li class="nav-item">
-            <%= link_to "Sign out", destroy_user_session_path, :method => :delete, :class => "nav-link" %>
-          </li>
         <% else %>
           <li class="nav-item">
             <%= link_to "Sign up", new_user_registration_path, :class => "nav-link" %>
