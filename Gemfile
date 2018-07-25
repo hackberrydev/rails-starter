@@ -24,6 +24,7 @@ group :development, :test do
 end
 
 group :development do
+  gem "factory_bot_rails"
   gem "listen", ">= 3.0.5", "< 3.2"
   gem "spring"
   gem "spring-commands-rspec"
@@ -33,5 +34,4 @@ end
 
 group :test do
   gem "capybara"
-  gem "factory_bot_rails"
 end
