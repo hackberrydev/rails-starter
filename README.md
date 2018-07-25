@@ -4,12 +4,13 @@
 
 Includes:
 
+- A simple admin interface
 - Bootstrap
 - Capybara
+- Devise
+- Kaminari
 - Lograge
 - RSpec
-- Devise
-- A simple admin interface
 
 
 ### Admin
