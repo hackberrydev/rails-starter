@@ -12,6 +12,29 @@ Includes:
 - Lograge
 - RSpec
 
+### Cloning
+
+To start a new project, clone the repository:
+
+```bash
+git clone --depth 1 git@github.com:hackberryco/rails-starter.git <NEW_PROJECT_NAME>
+```
+
+`cd` into the new directory:
+
+```bash
+cd <NEW_PROJECT_NAME>
+```
+
+Remove the git repository:
+
+```bash
+rm -rf .git
+```
+
+Rename the application in `config/application.rb`.
+
+Initialize the new git repository and you're good to go!
 
 ### Admin
 
