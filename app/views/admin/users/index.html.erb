@@ -16,8 +16,9 @@
         <td><%= user.created_at %></td>
       </tr>
     <% end %>
-
-    <%= paginate @users %>
   </tbody>
 </table>
 
+<div class="pagination-container">
+  <%= paginate @users %>
+</div>
