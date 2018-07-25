@@ -10,6 +10,7 @@ gem "bootstrap", "~> 4.1.0"
 gem "devise"
 gem "jbuilder", "~> 2.5"
 gem "jquery-rails"
+gem "kaminari"
 gem "lograge"
 gem "pg", ">= 0.18", "< 2.0"
 gem "puma", "~> 3.11"
@@ -19,6 +20,7 @@ gem "uglifier", ">= 1.3.0"
 
 group :development, :test do
   gem "byebug"
+  gem "factory_bot_rails"
   gem "rspec-rails", "~> 3.7"
 end
 
@@ -32,5 +34,4 @@ end
 
 group :test do
   gem "capybara"
-  gem "factory_bot_rails"
 end
