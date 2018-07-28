@@ -32,7 +32,10 @@ Remove the git repository:
 rm -rf .git
 ```
 
-Rename the application in `config/application.rb` and `config/database.yml`.
+Rename the application in `config/application.rb`, `config/deploy.rb` and
+`config/database.yml`.
+
+Set the application repository in `config/application.rb`.
 
 Initialize the new git repository and you're good to go!
 
