@@ -182,6 +182,18 @@ Restart=always
 WantedBy=multi-user.target
 ```
 
+Copy the following logrotate configuration to /etc/logrotate.d/application_name:
+
+/home/developer/application_name/shared/log/*.log {
+  daily
+  rotate 7
+  create
+  size 10M
+  compress
+  delaycompress
+}
+
+
 ### Security
 
 Disable password authentication by adding `PasswordAuthentication no` to
