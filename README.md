@@ -12,6 +12,12 @@ Includes:
 - Lograge
 - RSpec
 
+### Development Dependencies
+
+```bash
+sudo apt-get install -y build-essential postgresql libpq-dev nodejs
+```
+
 ### Cloning
 
 To start a new project, clone the repository:
@@ -71,8 +77,7 @@ sudo apt-get update && sudo apt-get -y upgrade
 Install dependencies (git, ruby, nginx, passenger, etc.):
 
 ```bash
-sudo apt-get install -y ruby ruby-dev build-essential git nginx postgresql \
-  postgresql-contrib libpq-dev nodejs htop redis-server libmagickwand-dev
+sudo apt-get install -y build-essential git nginx postgresql postgresql-contrib libpq-dev nodejs htop
 ```
 
 Install bundler:
